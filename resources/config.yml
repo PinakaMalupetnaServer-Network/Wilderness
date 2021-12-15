@@ -3,10 +3,10 @@
 # Sets coordinate ranges /wild should be bounded to.
 # range = [min, max] (closed interval)
 coordinate-ranges:
-  minx: -100000
-  maxx: 100000
-  minz: -100000
-  maxz: 100000
+  minx: -100000000
+  maxx: 100000000
+  minz: -100000000
+  maxz: 100000000
 
 # Whether to temporarily lock players off of using the command
 # while a /wild request is pending.
@@ -29,7 +29,7 @@ levels:
   # The type of the list. Available types:
   #   blacklist: All worlds listed in "list" are forbidden
   #   whitelist: Only the worlds listed in "list" are permitted
-  type: whitelist
+  type: blacklist
   list:
   - "nether" # highest block in the nether is always at y=128, so this plugin won't work properly in the nether
   - world
